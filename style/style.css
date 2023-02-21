@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/*========= 基本的なCSS ===============*/
+.Header {
+position: fixed; /* ヘッダーを固定する */
+top: 0; /* 上部から配置の基準位置を決める */
+left: 0; /* 左から配置の基準位置を決める */
+width: 100%; /* ヘッダーの横幅を指定する */
+height: 50px; /* ヘッダーの高さを指定する */
+padding: 10px; /* ヘッダー内側の余白を指定する(上下左右) */
+background-color: #EDA277; /* ヘッダーの背景色を指定する */
+color: #000000; /* ヘッダーのフォントの色を指定する */
+}
+
+.Contents {
+width: 100%; /* コンテンツの横幅を指定する */
+overflow: auto; /* コンテンツの表示を自動に設定（スクロール） */
+width: 800px;
+margin-right:auto;
+margin-left:auto;
+top: 20px;
+}
+
+.Table {
+list-style: none;
+display: flex;
+width: 750px;
+margin-right:auto;
+margin-left:auto;
+}
+
+.Left {
+justify-content: left;
+}
+
+#access{
+	font-size: 5pt;
+	
+}
+
+/*========= レイアウト ===============*/
+
+h1{
+	font-size:1.2rem;
+}
+
+h2{
+	font-size:1.2rem;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+p{
+	margin-top:10px;
+}
+
+.headline{
+	font-size:1.2rem;
+}
+
+ol li{
+	margin-top:10px;
+}
+
+
+nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	color: #666666;
+	padding:10px;
+	transition:all 0.5s;
+}
+
+nav ul li.current a,
+nav ul li a:hover{
+	color:#ffffff;	
+}
+
+/*========= セクション ===============*/
+section{
+	padding:30px;
+}
+
+section:nth-child(2n){
+	background:#f3f3f3;	
+}
