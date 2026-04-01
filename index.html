@@ -40,6 +40,9 @@
     <a href="#concept">Concept</a>
     <a href="#cv">Curriculum Vitae</a>
     <a href="#research">Research</a>
+    <a href="#project">Project</a>
+    <a href="#publication">PUblication</a>
+    <a href="#access-contact">Access & Contact</a>
   </aside>
 
   <!-- Hero セクション -->
@@ -48,24 +51,25 @@
     <div class="layer layer-structure"></div>
 
     <div class="layer layer-meaning">
-      <h1>「わかる」は関係性の中で生まれる</h1>
-      <p>
+      <h1 class="hero-title fade-up hero-repeat">「わかる」は関係性の中で生まれる</h1>
+      <p class="hero-subtitle fade-up hero-repeat">
         意図共有（Shared Intentionality）が生じる構造を解明し、<br>
         人と人、人とAIの関係性の中で生じる意味・理解・共創の構造を探究する
       </p>
-    </div>
 
-    <div class="layer layer-action" aria-hidden="true">
-      <div class="scroll-indicator">Scroll ↓</div>
+      <div class="scroll-cue scroll-cue--hero" aria-hidden="true">Scroll ↓</div>
+
     </div>
+    
+    
   </section>
 
   <!-- Introduction セクション -->
   <section class="introduction-section fade-up" id="introduction">
-    <div class="introduction-box">
-      <span class="intro-label">Introduction</span>
+    <div class="section-card section-card--intro">
+      <span class="section-label">Introduction</span>
       <h1>共創コミュニケーション研究室とは</h1>
-      <div class="intro-line"></div>
+      <div class="section-divider"></div>
 
       <p>
         本研究室では、共創を、人やAIが相互作用するなかで、理解や意図が重なり合い、
@@ -93,11 +97,10 @@
         意図共有（Shared Intentionality）が生じる構造を解明し、
         人と人、人とAIの関係性の中で生じる意味・理解・共創の構造を探究します。
       </p>
+
     </div>
 
-    <div class="layer layer-action" aria-hidden="true">
-      <div class="scroll-indicator">Scroll ↓</div>
-    </div>
+    <div class="scroll-cue scroll-cue--section" aria-hidden="true">Scroll ↓</div>
   </section>
 
   <!-- Concept セクション -->
@@ -120,7 +123,7 @@
           <line x1="500" y1="500" x2="260" y2="500" stroke="var(--line-soft)" stroke-width="1"></line>
         </g>
 
-        <g class="hover-layer humanai" id="humanai-layer" data-key="humanai">
+        <g class="hover-layer human-ai" id="human-ai-layer" data-key="human-ai">
           <circle cx="500" cy="500" r="420" fill="var(--white-soft)" opacity="0.8" stroke="url(#aiGradient)" stroke-width="3"></circle>
         </g>
         <g id="human-ai-labels" fill="black" font-size="20" text-anchor="middle">
@@ -160,7 +163,7 @@
           <text x="280" y="500">予測</text>
         </g>
 
-        <g class="hover-layer core" id="core-layer" data-key="core">
+        <g class="hover-layer shared-intentionality" id="shared-intentionality-layer" data-key="shared-intentionality">
           <circle cx="500" cy="500" r="150" fill="var(--orange-main)" opacity="0.9"></circle>
           <text x="500" y="490" fill="#fff" font-size="38" font-weight="600" text-anchor="middle">意図共有</text>
           <text x="500" y="525" fill="#fff" font-size="24" text-anchor="middle">Shared Intentionality</text>
@@ -175,22 +178,20 @@
       </svg>
     </div>
 
-    <div class="layer layer-action" aria-hidden="true">
-      <div class="scroll-indicator">Scroll ↓</div>
-    </div>
+    <div class="scroll-cue scroll-cue--section" aria-hidden="true">Scroll ↓</div>
   </section>
 
   <!-- CV セクション -->
   <section class="cv-section fade-up" id="cv">
-    <div class="introduction-box cv-box cv-box-jp">
-      <span class="intro-label">Curriculum Vitae</span>
+    <div class="section-card section-card--cv cv-box cv-box-jp">
+      <span class="section-label">Curriculum Vitae</span>
       <h1>略歴・研究業績</h1>
-      <div class="intro-line"></div>
+      <div class="section-divider"></div>
 
       <h2 class="cv-block-title">安田 哲也 (Tetsuya YASUDA), 博士(情報学)</h2>
       <div class="cv-mini-line"></div>
 
-      <div class="jp-info-card">
+      <div class="panel-card panel-card--profile">
         <p><strong>所属</strong><br>山口大学 大学院創成科学研究科 准教授</p>
         <p><strong>専門</strong><br>認知科学 / 語用論 / ヒューマンエージェントインタラクション / マルチモーダル・コミュニケーション</p>
         <p>
@@ -205,7 +206,7 @@
             <section class="cv-block">
               <h2 class="cv-block-title2">学歴に関する情報</h2>
               <div class="cv-mini-line"></div>
-              <div class="jp-info-card">
+              <div class="panel-card panel-card--profile">
                 <div class="cv-item-row">
                   <div class="cv-item-label">修士課程</div>
                   <div class="cv-item-body">
@@ -226,7 +227,7 @@
             <section class="cv-block">
               <h2 class="cv-block-title2">研究・教育活動</h2>
               <div class="cv-mini-line"></div>
-              <div class="jp-info-card">
+              <div class="panel-card panel-card--profile">
                 <div class="activity-card">
                   <h3>研究活動</h3>
                   <div class="cv-item-body">
@@ -273,7 +274,7 @@
               <h2 class="cv-block-title2">最近の業績（過去5年間）</h2>
               <div class="cv-mini-line"></div>
 
-              <article class="achievement-card">
+              <article class="panel-card panel-card--achievement">
                 <div class="achievement-label">コミュニケーション意図・意図理解</div>
                 <p class="achievement-item">
                   Kimura, H., Yasuda, T., and Kobayashi, H. (2025). “Outside-speech” gestures convey additional information beyond speech while maintaining communicative efficiency. Studies in Language Sciences, 23(2), 11-17.
@@ -283,7 +284,7 @@
                 </p>
               </article>
 
-              <article class="achievement-card">
+              <article class="panel-card panel-card--achievement">
                 <div class="achievement-label">言語獲得・語彙推測</div>
                 <p class="achievement-item">
                   Kobayashi, H., Yasuda, T., and Liszkowski, U. (2023). “Marked pointing facilitates learning part names: A test of lexical constraint versus social pragmatic accounts of word learning.” Journal of Child Language, Vol. 50, No. 2, 296–310.
@@ -293,7 +294,7 @@
                 </p>
               </article>
 
-              <article class="achievement-card">
+              <article class="panel-card panel-card--achievement">
                 <div class="achievement-label">Human-Agent Interaction</div>
                 <p class="achievement-item">
                   He, Z., Kobayashi, H., and Yasuda, T. (Dec, 2025). Is “Two” just two? Human expectations of how robots interpret number words, Proceedings of the 13th International Conference on Human-Agent Interaction, pp. 563–565, Tokyo, Japan. (Best Poster Award)
@@ -307,16 +308,16 @@
             <section class="cv-block">
               <h2 class="cv-block-title2">科研費</h2>
               <div class="cv-mini-line"></div>
-              <div class="jp-info-card">
-                <div class="grant-card">
+              <div class="panel-card panel-card--profile">
+                <div class="panel-card panel-card--grant">
                   <div class="grant-period">2025–2028</div>
                   <div class="grant-title">基盤研究(C)「エージェントの言語情報に含意を生じさせる基盤」</div>
                 </div>
-                <div class="grant-card">
+                <div class="panel-card panel-card--grant">
                   <div class="grant-period">2020–2024</div>
                   <div class="grant-title">基盤研究(C)「コミュニケーションにおける思考力の基盤：スカラー含意からの検討」</div>
                 </div>
-                <div class="grant-card">
+                <div class="panel-card panel-card--grant">
                   <div class="grant-period">2014–2016</div>
                   <div class="grant-title">若手研究(B)「指示タイミングを利用した非言語情報の統合的利用と指示意図推測の検討」</div>
                 </div>
@@ -327,7 +328,7 @@
       </div>
     </div>
 
-    <div class="research-scroll-indicator" aria-hidden="true">Scroll ↓</div>
+    <div class="scroll-cue scroll-cue--section" aria-hidden="true">Scroll ↓</div>
   </section>
 
   <!-- Research セクション -->
@@ -343,7 +344,7 @@
 
       <div class="research-space">
         <svg id="researchSVG" viewBox="0 0 1000 1000" role="img" aria-label="研究領域の構造図">
-          <g class="research-node core" data-key="core">
+          <g class="research-node shared-intentionality" data-key="shared-intentionality">
             <circle cx="500" cy="500" r="70"></circle>
             <text x="500" y="505" text-anchor="middle">Shared Intentionality</text>
           </g>
@@ -378,20 +379,19 @@
       </div>
     </div>
 
-    <div class="research-scroll-indicator" aria-hidden="true">Scroll ↓</div>
+    <div class="scroll-cue scroll-cue--section" aria-hidden="true">Scroll ↓</div>
   </section>
 
   <!-- Project セクション -->
   <section class="project-section fade-up" id="project">
-    <div class="introduction-box project-box">
-      <span class="intro-label">Project</span>
+    <div class="section-card section-card--project project-box">
+      <span class="section-label">Project</span>
       <h1>研究プロジェクト</h1>
-      <div class="intro-line"></div>
+      <div class="section-divider"></div>
 
       <p class="project-lead">
-        意図共有を中核に、人間同士・人とAIの相互作用を基礎から応用までつなぐ
-        プロジェクト群を展開しています。非言語情報、明示されない言語情報、
-        ジェスチャー、エージェント理解、そして複合現実・仮想現実における経験のあり方を、
+        意図共有を中核に、人間同士・人とAIの相互作用を基礎から応用までつなぐプロジェクトを展開します。
+        非言語情報、明示されない言語情報、エージェント理解、そして複合現実等における相互作用を、
         認知科学・語用論・ヒューマンエージェントインタラクションの視点から探究します。
       </p>
 
@@ -428,20 +428,137 @@
         </article>
       </div>
     </div>
-    <div class="research-scroll-indicator" aria-hidden="true">Scroll ↓</div>
+    <div class="scroll-cue scroll-cue--project" aria-hidden="true">Scroll ↓</div>
   </section>
 
+  <!-- Publication セクション -->
+  <section class="publication-section fade-up" id="publication">
+    <div class="section-card section-card--publication publication-box">
+      <span class="section-label">Publication</span>
+      <h1>業績一覧</h1>
+      <div class="section-divider"></div>
 
+      <div class="publication-visual" aria-label="業績カテゴリ">
+        <svg viewBox="0 0 980 220" class="publication-svg" role="img" aria-label="語用論3カテゴリ、熟達、発達・教育の業績カテゴリ">
+          <!-- Pragmatics label -->
+          <text x="320" y="42" class="publication-group-label" text-anchor="middle">
+            Pragmatics / 語用論
+          </text>
 
+          <!-- Connector lines: ○―○―○ -->
+          <line class="publication-connector" x1="182" y1="108" x2="278" y2="108"></line>
+          <line class="publication-connector" x1="352" y1="108" x2="448" y2="108"></line>
 
-  <section class="access-contact">
-  <div class="section-header fade-section">
+          <!-- 1: Pragmatics Child -->
+          <g
+            class="publication-node"
+            data-key="pragmatics-child"
+            tabindex="0"
+            role="button"
+            aria-label="語用論 幼児"
+            style="transform-origin: 140px 108px;"
+          >
+            <circle cx="140" cy="108" r="42"></circle>
+            <text x="140" y="113" text-anchor="middle">幼児</text>
+          </g>
+
+          <!-- 2: Pragmatics Adult -->
+          <g
+            class="publication-node"
+            data-key="pragmatics-adult"
+            tabindex="0"
+            role="button"
+            aria-label="語用論 成人"
+            style="transform-origin: 310px 108px;"
+          >
+            <circle cx="310" cy="108" r="42"></circle>
+            <text x="310" y="113" text-anchor="middle">成人</text>
+          </g>
+
+          <!-- 3: Pragmatics Agent -->
+          <g
+            class="publication-node"
+            data-key="pragmatics-agent"
+            tabindex="0"
+            role="button"
+            aria-label="語用論 エージェント"
+            style="transform-origin: 480px 108px;"
+          >
+            <circle cx="480" cy="108" r="42"></circle>
+            <text x="480" y="100" text-anchor="middle">
+              <tspan x="480" dy="0">エージェ</tspan>
+              <tspan x="480" dy="18">ント</tspan>
+            </text>
+          </g>
+
+          <!-- 4: Skill -->
+          <g
+            class="publication-node"
+            data-key="skill"
+            tabindex="0"
+            role="button"
+            aria-label="熟達"
+            style="transform-origin: 650px 108px;"
+          >
+            <circle cx="650" cy="108" r="42"></circle>
+            <text x="650" y="113" text-anchor="middle">熟達</text>
+          </g>
+
+          <!-- 5: Development & Education -->
+          <g
+            class="publication-node"
+            data-key="development-education"
+            tabindex="0"
+            role="button"
+            aria-label="発達 教育"
+            style="transform-origin: 820px 108px;"
+          >
+            <circle cx="820" cy="108" r="42"></circle>
+            <text x="820" y="100" text-anchor="middle">
+              <tspan x="820" dy="0">発達・</tspan>
+              <tspan x="820" dy="18">教育</tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="publication-panel" id="publication-panel">
+        <div class="publication-panel-head">
+          <h2 id="publication-title">Pragmatics (Child) / 語用論（幼児）</h2>
+          <span id="publication-count">3</span>
+        </div>
+
+        <div class="publication-panel-body" id="publication-body">
+          <ol class="publication-list">
+            <li class="publication-item">
+              <span class="publication-year">2025</span>
+              <span class="publication-text">Yasuda, T., ...</span>
+            </li>
+            <li class="publication-item">
+              <span class="publication-year">2024</span>
+              <span class="publication-text">Yasuda, T., ...</span>
+            </li>
+            <li class="publication-item">
+              <span class="publication-year">2023</span>
+              <span class="publication-text">Yasuda, T., ...</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue scroll-cue--publication" aria-hidden="true">Scroll ↓</div>
+  </section>
+
+  <!-- Access & Contact セクション -->
+  <section class="access-contact" id="access-contact">
+  <div class="section-header fade-up">
     <h2>Access & Contact</h2>
     <p>研究室へのアクセス方法とお問い合わせ先</p>
   </div>
 
   <div class="access-contact-grid">
-    <div class="access-box fade-section">
+    <div class="access-box fade-up">
       <h3>Access</h3>
       <p class="access-address">
         〒755-8611<br>
@@ -465,7 +582,7 @@
       </div>
     </div>
 
-    <div class="contact-box fade-section">
+    <div class="contact-box fade-up">
       <h3>Contact</h3>
 
       <dl class="contact-list">
@@ -505,6 +622,7 @@
     <p id="info-purpose"></p>
   </div>
 
+  <script src="source/publication_data.js"></script>
   <script src="source/main.js"></script>
 </body>
 </html>
