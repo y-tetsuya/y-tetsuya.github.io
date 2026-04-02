@@ -972,9 +972,6 @@ section {
   stroke-width: 1.6;
   filter: drop-shadow(0 10px 18px rgba(80, 60, 40, 0.08));
   transition: stroke 0.22s ease, filter 0.22s ease, fill 0.22s ease;
-  white-space: nowrap;
-  overflow: visible;
-  display: inline-block;
 }
 
 .publication-node text {
