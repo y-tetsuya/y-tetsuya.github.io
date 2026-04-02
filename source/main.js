@@ -252,27 +252,27 @@ const researchContentMap = {
   "behavioral-experiments": {
     title: "Behavioral Experiments｜行動実験",
     keywords: "認知科学実験 / 実験計画法",
-    desc: "本研究室では、すべての実験の起点となる手法です。人間のコミュニケーション活動を各要因から捉え直すことで現象を調べます。"
+    desc: "本研究室では、行動実験をすべての実験の起点となる手法として位置づけています。人間のコミュニケーション活動を複数の要因から捉え直すことで、その現象を検討します。"
   },
   "multimodal-analysis": {
     title: "Multimodal Analysis｜マルチモーダル分析",
     keywords: "ジェスチャー / 視線 / 相互作用",
-    desc: "人間・人間、また人間・AIの相互作用の中で観察されるコミュニケーション現象から意図を調べます。"
+    desc: "人間同士、また人間とAIの相互作用の中で観察されるコミュニケーション現象を通して、意図理解・意図共有のあり方を検討します。"
   },
   "applications": {
     title: "Developmental and Educational Applications｜発達・教育への応用",
     keywords: "発達 / 教育 / 共創社会",
-    desc: "得られた発達や教育に関する知見がどのように影響するかを捉えます。"
+    desc: "研究から得られた知見が、発達や教育の場面にどのように応用できるかを検討します。"
   },
   "xr-environments": {
     title: "xR Environments｜クロス・リアリティ環境",
-    keywords: "VR / AR / MR / ハイブリット環境",
-    desc: "人間がどのように環境と相互作用しているのかを調べます。"
+    keywords: "VR / AR / MR / ハイブリッド環境",
+    desc: "人間がxR環境の中で、他者や環境とどのように相互作用するのかを検討します。(Toward Research)"
   },
-  "human–agent-interaction": {
-    title: "HAI｜ヒューマン エージェント インタラクション",
+  "human-agent-interaction": {
+    title: "Human-Agent Interaction｜ヒューマン・エージェント・インタラクション",
     keywords: "HAI / HRI / 人とAIの語用論",
-    desc: "ヒューマン・エージェント・インタラクションにおいて、人間が対話者(エージェント)にどのような意図を推測するのかを調べます。"
+    desc: "ヒューマン・エージェント・インタラクションにおいて、人間が対話相手であるエージェントにどのような意図を推測するのかを検討します。"
   }
 };
 

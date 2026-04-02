@@ -790,7 +790,7 @@ section {
   stroke: rgba(36, 240, 36, 0.55);
 }
 
-.research-node.human–agent-interaction circle {
+.research-node.human-agent-interaction circle {
   fill: rgba(144, 141, 240, 0.94);
   stroke: rgba(107, 36, 240, 0.55);
 }
@@ -948,6 +948,7 @@ section {
   overflow: visible;
 }
 
+
 .publication-group-label {
   fill: #8e7763;
   font-size: 14px;
@@ -971,6 +972,9 @@ section {
   stroke-width: 1.6;
   filter: drop-shadow(0 10px 18px rgba(80, 60, 40, 0.08));
   transition: stroke 0.22s ease, filter 0.22s ease, fill 0.22s ease;
+  white-space: nowrap;
+  overflow: visible;
+  display: inline-block;
 }
 
 .publication-node text {
@@ -978,6 +982,7 @@ section {
   font-size: 13.5px;
   font-weight: 500;
   pointer-events: none;
+  dominant-baseline: middle;
 }
 
 .publication-node:hover,
