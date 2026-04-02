@@ -54,7 +54,7 @@ section {
 }
 
 .nav-left {
-  margin-left: 5%;
+  margin-left: 6%;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -77,6 +77,35 @@ section {
   font-size: 25px;
   font-weight: 600;
   letter-spacing: 0.05em;
+}
+
+/* Language switch */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-right: 5%;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.lang-switch a {
+  text-decoration: none;
+  color: #333;
+}
+
+.lang-switch a.active {
+  font-weight: 700;
+}
+
+.lang-switch a:hover {
+  opacity: 0.7;
 }
 
 /* ハンバーガーメニュー */
@@ -331,8 +360,7 @@ section {
   color: #3e3127;
 }
 
-.section-divider,
-.intro-line {
+.section-divider{
   width: 72px;
   height: 2px;
   margin: 22px auto 34px;
@@ -340,8 +368,15 @@ section {
   background: #c9b8a5;
 }
 
+.session-card .section-divider { 
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
 .section-card p,
 .introduction-box p {
+  text-align: left; 
   margin: 0 0 1.4em;
   font-size: 1.05rem;
   line-height: 2.1;
@@ -353,13 +388,11 @@ section {
   margin-bottom: 0;
 }
 
-.section-card--intro {
-  /* Introduction section base card */
-}
-
+.section-card--en,
 .section-card--cv,
 .section-card--project {
   text-align: left;
+  word-break: normal;
 }
 
 /* 浮かび上がり */
