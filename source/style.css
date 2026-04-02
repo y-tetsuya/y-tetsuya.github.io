@@ -54,6 +54,7 @@ section {
 }
 
 .nav-left {
+  margin-left: 5%;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -73,7 +74,7 @@ section {
 }
 
 .lab-name {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 600;
   letter-spacing: 0.05em;
 }
@@ -972,6 +973,9 @@ section {
   stroke-width: 1.6;
   filter: drop-shadow(0 10px 18px rgba(80, 60, 40, 0.08));
   transition: stroke 0.22s ease, filter 0.22s ease, fill 0.22s ease;
+  white-space: nowrap;
+  overflow: visible;
+  display: inline-block;
 }
 
 .publication-node text {

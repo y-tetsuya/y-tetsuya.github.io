@@ -1,6 +1,6 @@
 const publicationMap = {
   "selected-paper": {
-    "title": "Selected Publication",
+    "title": "Selected Paper",
     "items": [
       {
         "year": "2024",
