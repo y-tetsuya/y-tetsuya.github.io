@@ -725,6 +725,12 @@ section {
   color: #444;
 }
 
+.research-sticky-desc--main {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000;
+}
+
 .research-space {
   position: relative;
   min-height: 720px;
@@ -753,7 +759,7 @@ section {
 .research-node circle {
   fill: rgba(255, 255, 255, 0.95);
   stroke: rgba(0, 0, 0, 0.08);
-  stroke-width: 1.2;
+  stroke-width: 1.4;
   filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.08));
   transform-box: fill-box;
   transform-origin: center;
@@ -763,15 +769,35 @@ section {
     stroke 0.45s ease;
 }
 
-.research-node.shared-intentionality circle {
+.research-node.behavioral-experiments circle {
   fill: rgba(240, 138, 36, 0.94);
   stroke: rgba(240, 138, 36, 0.55);
 }
 
-.research-node.shared-intentionality text {
+.research-node.behavioral-experiments text {
   fill: #c92121;
   font-size: 20px;
   font-weight: 600;
+}
+
+.research-node.multimodal-analysis circle {
+  fill: rgba(76, 224, 101, 0.94);
+  stroke: rgba(36, 240, 36, 0.55);
+}
+
+.research-node.applications circle {
+  fill: rgba(76, 155, 224, 0.94);
+  stroke: rgba(36, 240, 36, 0.55);
+}
+
+.research-node.human–agent-interaction circle {
+  fill: rgba(144, 141, 240, 0.94);
+  stroke: rgba(107, 36, 240, 0.55);
+}
+
+.research-node.xr-environments circle {
+  fill: rgba(233, 185, 185, 0.94);
+  stroke: rgba(255, 119, 128, 0.55);
 }
 
 .research-node:hover circle {
@@ -782,7 +808,7 @@ section {
 
 #research-tooltip {
   position: fixed;
-  max-width: 320px;
+  max-width: 380px;
   padding: 14px 18px;
   background: rgba(255, 255, 255, 0.96);
   border-radius: 12px;

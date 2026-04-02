@@ -1,4 +1,29 @@
 const publicationMap = {
+  "selected-paper": {
+    "title": "Selected Publication",
+    "items": [
+      {
+        "year": "2024",
+        "text": "安田哲也, 池田まさみ, 伊藤恵子, & 小林春美. (2024, Jun). 「量」的な言語表現を含むことが量的含意を解釈することに必要なのか？. 認知科学, 32(2), 307–321."
+      },
+      {
+        "year": "2023",
+        "text": "Kobayashi, H., Yasuda, T., & Liszkowski, U. (2023, Mar). Marked pointing facilitates learning part names: A test of lexical constraint versus social pragmatic accounts of word learning. Journal of Child Language, 50(2), 296–310."
+      },
+      {
+        "year": "2022",
+        "text": "Yasuda, T., & Kobayashi, H. (2022, Feb). Ostensive gaze shifting changes referential intention in word meanings: an examination of children’s learning of part names. Journal of Experimental Psychology: Learning, Memory, and Cognition, 48(2), 272–283."
+      },
+      {
+        "year": "2025",
+        "text": "He, Z., Kobayashi, H., & Yasuda, T. (2025, Nov). Is “Two” Just Two? Human Expectations of How Robots Interpret Number Words. Proceedings of the 13th International Conference on Human-Agent Interaction, Tokyo, Japan, 563–565. (Best Poster Award)"
+      },
+      {
+        "year": "2024",
+        "text": "Nishihata, C., Kobayashi, H., & Yasuda, T. (2024, Nov). People’s expectation on the use of pragmatic inferences in “robot utterances”. Proceedings of the 12th International Conference on Human-Agent Interaction, Swansea, U.K, 17–24."
+      },
+    ]
+  },
   "pragmatics-agent": {
     "title": "Pragmatics (Agent) / 語用論（エージェント）",
     "items": [
@@ -48,7 +73,7 @@ const publicationMap = {
     "title": "Pragmatics (Child) / 語用論（幼児）",
     "items": [
       {
-        "year": "2026",
+        "year": "2025",
         "text": "小林春美, 喜多壮太郎, & 安田哲也. (2025, Mar). 幼児は自分の解釈した名称をいかに他者に伝えるか―オーディエンス・デザインからの検討. 日本発達心理学会第37回大会, 4PM2-PS43, XXX, 福岡国際会議場."
       },
       {
@@ -406,10 +431,6 @@ const publicationMap = {
       },
       {
         "year": "2020",
-        "text": "Kobayashi, H., Yasuda, T., Igarashi, H., & Suzuki, S. (2020, Nov). Language use in joint action: the means of referring expressions. International Journal of Social Robotics, 12, 1021–1029."
-      },
-      {
-        "year": "2020",
         "text": "Kashiwadate, K., Yasuda, T., Fujita, K., Kita, S., & Kobayashi, H. (2020, Mar). Syntactic structure influences speech-gesture synchronization. Letters on Evolutionary Behavioral Science, 11(1), 10–14."
       },
       {
@@ -541,6 +562,10 @@ const publicationMap = {
   "skill": {
     "title": "Skill Acquisition / 熟達",
     "items": [
+      {
+        "year": "2020",
+        "text": "Kobayashi, H., Yasuda, T., Igarashi, H., & Suzuki, S. (2020, Nov). Language use in joint action: the means of referring expressions. International Journal of Social Robotics, 12, 1021–1029."
+      },
       {
         "year": "2013",
         "text": "Suzuki, S., Igarashi, H., Kobayashi, H., Yasuda, T., & Harashima, F. (2013, Jan). Human adaptive mechatronics and human-system modelling. International Journal of Advanced Robotic Systems, 10(152)."

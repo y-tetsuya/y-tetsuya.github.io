@@ -249,30 +249,30 @@ const researchTooltipKeywords = qs("#rt-keywords");
 const researchTooltipDescription = qs("#rt-desc");
 
 const researchContentMap = {
-  "shared-intentionality": {
-    title: "Shared Intentionality｜意図共有",
-    keywords: "共通基盤・共同志向性・目的共有・意図調整",
-    desc: "すべての認知・相互作用・社会構造の起点となる中核構造。意味・理解・協調・共創の根源的メカニズム"
+  "behavioral-experiments": {
+    title: "Behavioral Experiments｜行動実験",
+    keywords: "認知科学実験 / 実験計画法",
+    desc: "本研究室では、すべての実験の起点となる手法です。人間のコミュニケーション活動を各要因から捉え直すことで現象を調べます。"
   },
-  "phenomena": {
-    title: "Phenomena｜現象",
-    keywords: "Communication / Cooperation / Meaning / Misunderstanding / Human–AI Interaction",
-    desc: "人間・人間、また人間・AIの相互作用の中で観察されるコミュニケーション現象"
+  "multimodal-analysis": {
+    title: "Multimodal Analysis｜マルチモーダル分析",
+    keywords: "ジェスチャー / 視線 / 相互作用",
+    desc: "人間・人間、また人間・AIの相互作用の中で観察されるコミュニケーション現象から意図を調べます。"
   },
-  "structures": {
-    title: "Structures｜構造",
-    keywords: "Grounding / Joint Attention / Context / Norms / Prediction",
-    desc: "意味形成と理解が成立するための基盤構造と社会的・認知的枠組み"
+  "applications": {
+    title: "Developmental and Educational Applications｜発達・教育への応用",
+    keywords: "発達 / 教育 / 共創社会",
+    desc: "得られた発達や教育に関する知見がどのように影響するかを捉えます。"
   },
-  "mechanisms": {
-    title: "Mechanisms｜メカニズム",
-    keywords: "Intent Attribution / Coordination Dynamics / Shared Intentionality",
-    desc: "意図共有・協調・共創が生まれる動的プロセスの構成原理"
+  "xr-environments": {
+    title: "xR Environments｜クロス・リアリティ環境",
+    keywords: "VR / AR / MR / ハイブリット環境",
+    desc: "人間がどのように環境と相互作用しているのかを調べます。"
   },
-  "methodology": {
-    title: "Methodology｜方法論",
-    keywords: "Cognitive Science / Experimental Psychology / Experimental Pragmatics / HAI Experiments",
-    desc: "理論・実験・設計・モデル化を統合した横断的研究方法論"
+  "human–agent-interaction": {
+    title: "HAI｜ヒューマン エージェント インタラクション",
+    keywords: "HAI / HRI / 人とAIの語用論",
+    desc: "ヒューマン・エージェント・インタラクションにおいて、人間が対話者(エージェント)にどのような意図を推測するのかを調べます。"
   }
 };
 
@@ -340,6 +340,6 @@ publicationNodes.forEach((node) => {
 });
 
 /* 初期表示 */
-showPublicationPanel("pragmatics-child");
+showPublicationPanel("selected-paper");
 
 
