@@ -343,3 +343,82 @@ publicationNodes.forEach((node) => {
 showPublicationPanel("selected-paper");
 
 
+/* =========================
+   News panel
+========================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const newsNodes = document.querySelectorAll(".news-node");
+  const newsTitle = document.getElementById("news-title");
+  const newsCount = document.getElementById("news-count");
+  const newsBody = document.getElementById("news-body");
+
+  const newsContentMap = window.newsContentMap || {};
+
+  function escapeHTML(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function escapeAttr(str) {
+    return String(str).replace(/"/g, "&quot;");
+  }
+
+  function renderNewsPanel(key) {
+    const content = newsContentMap[key];
+    if (!content) return;
+
+    newsTitle.textContent = content.title;
+    newsCount.textContent = content.items.length;
+
+    if (content.items.length === 0) {
+      newsBody.innerHTML = `<p class="news-empty">現在、このカテゴリのお知らせはありません。</p>`;
+    } else {
+      newsBody.innerHTML = `
+        <ol class="news-list">
+          ${content.items.map(item => `
+            <li class="news-item">
+              <div class="news-date">${escapeHTML(item.date)}</div>
+              <div class="news-content">
+                <div class="news-item-title">${escapeHTML(item.title)}</div>
+                <div class="news-text">${escapeHTML(item.description)}</div>
+                ${item.link ? `
+                  <div class="news-link-wrap">
+                    <a href="${escapeAttr(item.link)}" class="news-link" target="_blank" rel="noopener noreferrer">
+                      詳細を見る
+                    </a>
+                  </div>
+                ` : ""}
+              </div>
+            </li>
+          `).join("")}
+        </ol>
+      `;
+    }
+
+    newsNodes.forEach(node => node.classList.remove("is-active"));
+    const activeNode = document.querySelector(`.news-node[data-key="${key}"]`);
+    if (activeNode) activeNode.classList.add("is-active");
+  }
+
+  newsNodes.forEach(node => {
+    const key = node.dataset.key;
+
+    node.addEventListener("mouseenter", () => renderNewsPanel(key));
+    node.addEventListener("focus", () => renderNewsPanel(key));
+    node.addEventListener("click", () => renderNewsPanel(key));
+
+    node.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        renderNewsPanel(key);
+      }
+    });
+  });
+
+  renderNewsPanel("news");
+});
