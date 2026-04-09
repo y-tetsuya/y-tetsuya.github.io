@@ -1475,6 +1475,29 @@ section {
   }
 }
 
+.site-copyright {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  z-index: 999;
+
+  padding: 8px 16px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  color: #444;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 0 16px;
@@ -1554,5 +1577,7 @@ section {
   #research-tooltip {
     max-width: min(280px, calc(100vw - 32px));
   }
+
+  
 
 }
