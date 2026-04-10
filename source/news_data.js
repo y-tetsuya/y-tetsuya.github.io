@@ -1,27 +1,4 @@
 window.newsContentMap = {
-  "": {
-    "title": "",
-    "items": [
-      {
-        "date": "",
-        "title": "",
-        "description": "",
-        "link": ""
-      },
-      {
-        "date": "",
-        "title": "",
-        "description": "",
-        "link": ""
-      },
-      {
-        "date": "",
-        "title": "",
-        "description": "",
-        "link": ""
-      }
-    ]
-  },
   "news": {
     "title": "ニュース",
     "items": [
@@ -41,6 +18,12 @@ window.newsContentMap = {
         "date": "2026/3/27",
         "title": "研究室スタート",
         "description": "共創コミュニケーション研究室を立ち上げ、卒研生が5名入ってきました。どうぞよろしくお願いいたします。",
+        "link": ""
+      },
+      {
+        "date": "2026/1/1",
+        "title": "着任",
+        "description": "安田哲也が山口大学に准教授として着任しました。",
         "link": ""
       }
     ]
