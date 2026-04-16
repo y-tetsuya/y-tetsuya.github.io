@@ -507,15 +507,18 @@ section {
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: stretch;
   justify-content: center;
+  gap: 32px;
   padding: 100px 20px;
   background: linear-gradient(180deg, #f8f5f1 0%, #f3ede6 100%);
 }
 
 .section-card,
 .introduction-box {
-  width: min(960px, 92%);
+  width: min(650px, 92%);
+  height: min(700px);
   padding: 56px 48px;
   text-align: center;
   background: rgba(255, 255, 255, 0.82);
@@ -574,9 +577,24 @@ section {
 
 .section-card--en,
 .section-card--cv,
-.section-card--project {
+.section-card--project,
+.section-card--publication {
+  width: min(1000px, 92%);
+  height: min(1000px, 92%);
   text-align: left;
   word-break: normal;
+}
+
+.section-card--lab {
+  width: min(500px, 92%);
+  padding: 56px 48px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(201, 184, 165, 0.45);
+  border-radius: 28px;
+  box-shadow: 0 20px 60px rgba(80, 60, 40, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 /* 浮かび上がり */
@@ -589,6 +607,30 @@ section {
 .fade-up.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* for lab */
+.block-title {
+  margin: 0;
+  font-size: clamp(1.0rem, 2.0vw, 1.25rem);
+  text-align: left;
+  line-height: 1.45;
+  color: #3e3127;
+}
+
+.cv-mini-line {
+  width: 58px;
+  height: 2px;
+  border-radius: 999px;
+  background: #c9b8a5;
+}
+
+.panel-card--lab {
+  border-radius: 20px;
+  text-align: left;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(249, 245, 240, 0.92));
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 14px 34px rgba(80, 60, 40, 0.06);
 }
 
 /* =========================
@@ -1521,18 +1563,36 @@ section {
     padding: 72px 16px;
   }
 
+  .introduction-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
   .section-card,
-  .introduction-box {
+  .introduction-box,
+  .section-card--lab {
+    width: 100%;
+    max-width: 680px;
     padding: 38px 22px;
     border-radius: 20px;
     text-align: left;
+    box-sizing: border-box;
   }
 
   .section-card p,
-  .introduction-box p {
+  .introduction-box p,
+  .section-card--lab p {
     margin: 0 auto 1.4em;
     max-width: 780px;
     text-align: left;
+    line-height: 1.9;
+  }
+
+  .section-card h1,
+  .section-card--lab h1 {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+    line-height: 1.4;
   }
 
   #concept-sticky-box,
