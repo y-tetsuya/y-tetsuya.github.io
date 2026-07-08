@@ -448,6 +448,8 @@ section {
 
 .news-panel-body {
   min-height: 280px;
+  height: 400px;
+  overflow-y: scroll;
 }
 
 .news-list {
