@@ -389,7 +389,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ${item.link ? `
                   <div class="news-link-wrap">
                     <a href="${escapeAttr(item.link)}" class="news-link" target="_blank" rel="noopener noreferrer">
-                      詳細を見る
+                      View (関連情報を見る)
                     </a>
                   </div>
                 ` : ""}
