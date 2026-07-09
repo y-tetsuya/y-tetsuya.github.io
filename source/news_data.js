@@ -5,8 +5,8 @@ window.newsContentMap = {
       {
         "date": "2026/5/7",
         "title": "懇親会",
-        "description": "安田研の皆さんとRickyで懇親会をしました。",
-        "link": "https://www.instagram.com/ricky_yakitori.robata/"
+        "description": "安田研の皆さんと焼鳥炉端 RICKYで懇親会をしました。",
+        "link": ""
       },
       {
         "date": "2026/4/9",
