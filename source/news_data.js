@@ -50,16 +50,16 @@ window.newsContentMap = {
     "title": "発表・論文についてのお知らせ",
     "items": [
       {
-        "date": "2026/6/10",
-        "title": "学会発表予定(共同研究)",
-        "description": "東京電機大学 小林春美教授との共同研究「不一致なco-speech gestureは発話に明示されない時点情報を補うのか？」を日本認知科学会第43回大会で発表することが決まりました。当日は、小林先生と安田がポスターで発表予定です。",
-        "link": "https://pub.confit.atlas.jp/ja/event/jcss2026"
+        "date": "2026/9/19",
+        "title": "学会発表(共同研究)",
+        "description": "東京電機大学 小林春美教授との共同研究「Scalar-like quantitative inference without overt quantifiers in Japanese: Effects of sentence type and initial visual information」をJSLS2026で発表し、セッション終了後にいろいろな研究者から意見やアドバイスをいただきました。ありがとうございました。",
+        "link": "https://jslsweb.sakura.ne.jp/wp/en/1691-2/jsls-2026/call-for-papers/"
       },
       {
-        "date": "2026/5/20",
-        "title": "学会発表予定(共同研究)",
-        "description": "東京電機大学 小林春美教授との共同研究「Scalar-like quantitative inference without overt quantifiers in Japanese: Effects of sentence type and initial visual information」をJSLS2026で発表することが決まりました。当日は安田が発表予定です。",
-        "link": "https://jslsweb.sakura.ne.jp/wp/en/1691-2/jsls-2026/call-for-papers/"
+        "date": "2026/9/2",
+        "title": "学会発表(共同研究)",
+        "description": "東京電機大学 小林春美教授との共同研究「不一致なco-speech gestureは発話に明示されない時点情報を補うのか？」を日本認知科学会第43回大会でで発表し、いろいろな研究者から意見やアドバイスをいただきました。ありがとうございました。",
+        "link": "https://pub.confit.atlas.jp/ja/event/jcss2026"
       },
       {
         "date": "2026/3/4",
